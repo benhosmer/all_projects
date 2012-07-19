@@ -164,7 +164,7 @@ function all_projects_views_default_views() {
   $handler = $view->new_display('page', 'Page', 'page_1');
   $handler->override_option('path', 'all-projects');
   $handler->override_option('menu', array(
-    'type' => 'normal',
+    'type' => 'none',
     'title' => 'All Projects',
     'description' => '',
     'weight' => '10',
