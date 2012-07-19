@@ -1,4 +1,4 @@
-name = "all_projects"
+name = "All Projects"
 description = "A feature to create an all projects listing that displays at the root of the site."
 core = "6.x"
 package = "Features"
