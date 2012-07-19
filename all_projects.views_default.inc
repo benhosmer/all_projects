@@ -146,11 +146,11 @@ function all_projects_views_default_views() {
     ),
     'info' => array(
       'title' => array(
-        'sortable' => 0,
+        'sortable' => 1,
         'separator' => '',
       ),
       'field_funding_source_value' => array(
-        'sortable' => 0,
+        'sortable' => 1,
         'separator' => '',
       ),
     ),
