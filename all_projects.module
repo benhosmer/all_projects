@@ -10,26 +10,26 @@ function all_projects_block($op = 'list', $delta = 'all_projects_link') {
   switch ($op) {
     case 'list':
       $block['all_projects_link'] = array(
-      'info' => t('2.1-All Projects Block'),
+      'info' => t('All Projects Block'),
       'weight' => 0,
       'status' => TRUE,
       'visibility' => '1',
       'pages' => '<front>',
       'region' => 'header',
+      'cache' => BLOCK_NO_CACHE,
       );
       return $block;
     case 'view':   
        $block = array(
        'subject' => t('All Projects'),
-       'content' => '<em>Bawk!</em>',
+       'content' => '<a href="all-projects">Project Overview</a>',
        );
+       return $block;
     case 'configure':
        $block = array(
        '',
        );
        return $form;
       }
-      return $block;
-  
 }
 
