@@ -22,7 +22,7 @@ function all_projects_block($op = 'list', $delta = 'all_projects_link') {
     case 'view':   
        $block = array(
        'subject' => t('All Projects'),
-       'content' => '<a href="all-projects">Project Overview</a>',
+       'content' => '<a href="all-projects">Projects Overview</a>',
        );
        return $block;
     case 'configure':
