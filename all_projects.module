@@ -1,3 +1,35 @@
 <?php
 
 include_once('all_projects.features.inc');
+
+/*
+ * Implements hook_block().
+ **/
+function all_projects_block($op = 'list', $delta = 'all_projects_link') {
+  $block = array();
+  switch ($op) {
+    case 'list':
+      $block['all_projects_link'] = array(
+      'info' => t('2.1-All Projects Block'),
+      'weight' => 0,
+      'status' => TRUE,
+      'visibility' => '1',
+      'pages' => '<front>',
+      'region' => 'header',
+      );
+      return $block;
+    case 'view':   
+       $block = array(
+       'subject' => t('All Projects'),
+       'content' => '<em>Bawk!</em>',
+       );
+    case 'configure':
+       $block = array(
+       '',
+       );
+       return $form;
+      }
+      return $block;
+  
+}
+
