@@ -127,7 +127,7 @@ function all_projects_views_default_views() {
     ),
   ));
   $handler->override_option('access', array(
-    'type' => 'none',
+    'type' => 'access content',
   ));
   $handler->override_option('cache', array(
     'type' => 'none',
